@@ -1,0 +1,16 @@
+{
+  "header": {
+    "welcome": "Good to see you"
+  },
+  "hero": {
+    "slogan": "Translate, interpolate, and go global"
+  },
+  "guide": {
+    "create": "Create folder locales in public folder",
+    "step2": "Initialize i18n using top-level await before the app starts",
+    "enjoy": "Enjoy it (usage)"
+  },
+  "footer": {
+    "intro": "Hi, I'm Hoang Nam — this is a passion project designed to help you write cleaner, boilerplate-free code. I'm also open to freelance web opportunities. Wishing you a productive day!"
+  }
+}

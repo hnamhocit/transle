@@ -1,0 +1,16 @@
+{
+  "header": {
+    "welcome": "Rất vui được gặp bạn"
+  },
+  "hero": {
+    "slogan": "Dịch, chèn biến và vươn ra toàn cầu"
+  },
+  "guide": {
+    "create": "Tạo thư mục locales trong thư mục public",
+    "step2": "Khởi tạo i18n với top-level await trước khi ứng dụng khởi động",
+    "enjoy": "Sử dụng dễ dàng"
+  },
+  "footer": {
+    "intro": "Xin chào, tôi là Hoàng Nam — đây là dự án đam mê giúp bạn viết code sạch hơn, không lặp lại. Tôi cũng đang mở nhận dự án freelance web. Chúc bạn một ngày làm việc hiệu quả!"
+  }
+}
