@@ -39,7 +39,8 @@ export default function LanguageSelector() {
         <div className="relative">
             <motion.button whileTap={{scale: 0.95}} whileHover={{
                 scale: 1.05
-            }} onClick={toggleIsOpen} className="flex items-center gap-3 py-2 px-3 rounded-md bg-white shadow">
+            }} onClick={toggleIsOpen}
+                           className="flex items-center gap-3 py-2 px-3 rounded-md border bg-gray-100 border-gray-200 shadow">
                 <img width={24} height={20} src={`https://flagsapi.com/${langToCountry(lang)}/flat/64.png`}/>
 
                 <div>

@@ -7,14 +7,13 @@ const Header = () => {
     return (
         <div className="sticky left-0 top-0 pt-4 px-4 w-full h-20 z-20">
             <div
-                className="container mx-auto px-4 h-full flex items-center shadow bg-white/30 backdrop-blue-2xl rounded-2xl justify-between">
+                className="container mx-auto px-4 h-full flex items-center shadow bg-white rounded-2xl justify-between">
                 <div className="flex items-center gap-3">
                     <img src="/logo.png" alt="Logo" width={40} height={40}/>
                     <div className="hidden sm:block">{t("header.welcome")}</div>
                 </div>
 
                 <div className="flex items-center gap-3">
-                    <LanguageSelector/>
 
                     <a className="select-none" href="https://www.facebook.com/hnamhocit" target="_blank"
                        rel="noopener noreferrer">
@@ -30,6 +29,8 @@ const Header = () => {
                             src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
                             alt="Facebook" width={32} height={32}/>
                     </a>
+
+                    <LanguageSelector/>
                 </div>
             </div>
         </div>
