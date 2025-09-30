@@ -13,7 +13,7 @@ interface I18nStore {
 
 const fallbackLang = getBrowserLang()
 
-export const useI18nStore = create<I18nStore>((set, get) => ({
+const useI18nStore = create<I18nStore>((set, get) => ({
     lang: typeof window !== "undefined" ? localStorage.getItem("lang") || fallbackLang : fallbackLang,
     setLang: (lang) => {
         if (typeof window !== "undefined") localStorage.setItem("lang", lang);
@@ -29,3 +29,5 @@ export const useI18nStore = create<I18nStore>((set, get) => ({
     getLangs: () => Object.keys(get().translations),
     flattenTranslations: {},
 }));
+
+export {useI18nStore}

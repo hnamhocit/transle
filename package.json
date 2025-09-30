@@ -1,8 +1,19 @@
 {
   "name": "transle",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
   "type": "module",
+  "types": "dist/transle.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/transle.umd.cjs",
+  "module": "./dist/transle.js",
+  "exports": {
+    ".": {
+      "import": "./dist/transle.js",
+      "require": "./dist/transle.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -23,6 +34,7 @@
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/langmap": "^0.0.3",
+    "@types/node": "^24.6.0",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
@@ -36,6 +48,7 @@
     "locale-code": "^2.0.2",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.44.0",
-    "vite": "^7.1.7"
+    "vite": "^7.1.7",
+    "vite-plugin-dts": "^4.5.4"
   }
 }

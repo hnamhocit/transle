@@ -29,7 +29,6 @@
     "noUncheckedSideEffectImports": true
   },
   "include": [
-    "src",
     "lib"
   ]
 }

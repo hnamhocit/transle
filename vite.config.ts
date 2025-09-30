@@ -1,8 +1,9 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+// import tailwindcss from '@tailwindcss/vite'
+import {resolve} from 'path'
+import dts from 'vite-plugin-dts'
 
-// https://vite.dev/config/
 export default defineConfig({
     plugins: [
         react({
@@ -10,6 +11,19 @@ export default defineConfig({
                 plugins: [['babel-plugin-react-compiler']],
             },
         }),
-        tailwindcss()
+        // tailwindcss(),
+        dts({
+            include: ["lib/**/*.ts"],
+            tsconfigPath: "tsconfig.app.json",
+            rollupTypes: true
+        })
     ],
+    build: {
+        copyPublicDir: false,
+        lib: {
+            entry: resolve(__dirname, 'lib/main.ts'),
+            name: 'Transle',
+            fileName: 'transle',
+        },
+    }
 })
