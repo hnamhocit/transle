@@ -45,7 +45,11 @@ const App = () => {
 
                         <Button color="primary" shape="circle" icon={
                             <CopyIcon size={18}/>
-                        }/>
+                        }
+                                onClick={() => {
+                                    navigator.clipboard.writeText("npm i transle")
+                                }}
+                        />
                     </div>
                 </div>
 
@@ -62,7 +66,7 @@ const App = () => {
                         <div className="bg-white p-2 rounded-md">fr.json</div>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 flex-wrap">
                         <CodeBlock value={en}/>
                         <CodeBlock value={vi}/>
                         <CodeBlock value={fr}/>
@@ -78,7 +82,7 @@ const App = () => {
 
                     <div>As you can see, this is flatten translations progress to make it easier to use</div>
 
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 flex-wrap">
                         <CodeBlock value={translations}/>
 
                         <CodeBlock value={flattenTranslations}/>
