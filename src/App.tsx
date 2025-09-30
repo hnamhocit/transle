@@ -32,9 +32,9 @@ const App = () => {
 
             <div className="py-12 min-h-[calc(100vh-80px)] container mx-auto px-4 flex flex-col gap-12">
                 <div className="text-center flex flex-col items-center gap-4">
-                    <div className="text-5xl font-bold">TRANSLE</div>
+                    <div className="text-4xl sm:text-5xl font-bold">TRANSLE</div>
 
-                    <div className="font-semibold text-2xl">
+                    <div className="font-semibold text-xl sm:text-2xl">
                         {t("hero.slogan")}
                     </div>
 
@@ -54,7 +54,7 @@ const App = () => {
                 </div>
 
                 <div className="space-y-3">
-                    <div className="text-2xl font-bold">
+                    <div className="text-xl sm:text-2xl font-bold">
                         1. {t("guide.create")}
                     </div>
 
@@ -74,7 +74,7 @@ const App = () => {
                 </div>
 
                 <div className="space-y-3">
-                    <div className="text-2xl font-semibold">
+                    <div className="text-xl sm:text-2xl font-semibold">
                         2. {t("guide.step2")}
                     </div>
 
@@ -90,7 +90,7 @@ const App = () => {
                 </div>
 
                 <div className="space-y-3">
-                    <div className="text-2xl font-semibold">3. {t("guide.enjoy")} 😍</div>
+                    <div className="text-xl sm:text-2xl font-semibold">3. {t("guide.enjoy")} 😍</div>
 
                     <div className="google-sans-code">{'import {useT, useI18nStore} from "transle"'}</div>
 
