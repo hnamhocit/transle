@@ -1,6 +1,6 @@
 {
   "name": "transle",
-  "version": "1.0.1",
+  "version": "1.0.9",
   "type": "module",
   "types": "dist/transle.d.ts",
   "files": [
@@ -20,15 +20,11 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.13",
-    "@uiw/react-json-view": "^2.0.0-alpha.39",
-    "antd": "^5.27.4",
-    "lucide-react": "^0.544.0",
-    "motion": "^12.23.22",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.13",
     "zustand": "^5.0.8"
   },
   "devDependencies": {
@@ -49,6 +45,14 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.44.0",
     "vite": "^7.1.7",
-    "vite-plugin-dts": "^4.5.4"
+    "vite-plugin-dts": "^4.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "@tailwindcss/vite": "^4.1.13",
+    "@uiw/react-json-view": "^2.0.0-alpha.39",
+    "antd": "^5.27.4",
+    "lucide-react": "^0.544.0",
+    "motion": "^12.23.22",
+    "tailwindcss": "^4.1.13"
   }
 }
